@@ -1,0 +1,46 @@
+.todo-list-item {
+    overflow: hidden;
+}
+
+.todo-list-item input[type=checkbox] {
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.todo-list-title {
+    float: left;
+    max-width: calc(100% - 80px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+}
+
+.list-group-item-success .todo-list-title {
+    text-decoration: line-through;
+}
+
+.todo-list-item .glyphicon {
+    color: inherit;
+    opacity: 0.5;
+    float: right;
+    margin-left: 10px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.todo-list-item .glyphicon:hover {
+    opacity: 1;
+}
+
+.todo-list-item .glyphicon:last-child {
+    margin-left: 0;
+}
+
+.todo-list.todo-list-filter-active .todo-list-item.list-group-item-success {
+    display: none;
+}
+
+.todo-list.todo-list-filter-complete .todo-list-item.list-group-item-warning {
+    display: none;
+}
